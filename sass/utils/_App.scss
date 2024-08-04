@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--black);
+  transition: 250ms;
+  box-sizing: border-box;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+input,button,textarea{
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+html,
+body{
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+  background-color: var(--white);
+  // position: relative;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  
+}

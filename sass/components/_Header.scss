@@ -1,0 +1,82 @@
+$reused1: 20px;
+
+
+
+@mixin NavItem($fsize, $gap){
+    display: flex;
+    align-items: center;
+    gap: $gap;
+
+    i {
+        font-size: $fsize;
+    }
+}
+
+.Logo .li, .Burgermenu{
+    span{
+        font-size: $reused1;
+    }
+}
+
+.Navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: $reused1;
+    border-bottom: 3px solid var ('--black');
+}
+
+.List{
+    display: none;
+    // gap: $reused1 + 10px;
+    li{
+        user-select: none;
+        &:hover{
+            cursor: pointer;
+            color: rgb(202, 128, 43);
+            i,
+            span{
+                color: inherit;
+            }
+        }
+        @include NavItem(10px, ($reused1 - 15px));
+    }
+    }
+
+
+.Logo{
+    @include NavItem(30px, ($reused1 - 10px) );
+    user-select: none;
+    &:hover{
+        i{
+            transform: rotate(360deg);
+            color: rgb(30, 184, 27)
+        }
+    }
+   
+}
+
+
+.Burgermenu{
+    color: black;
+    @include NavItem(20px, ($reused1 - 10px) );
+    filter:  invert(20%);
+    padding: 15px 25px;
+    border-radius: 20px;
+    user-select: none;
+    &:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .List {
+        display: flex;
+        li {
+            margin: 0px 16px;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <title>Final Project</title>
+    <link rel="stylesheet" href="./sass/styles/index.min.css" />
+</head>
+<body>
+    <header>
+        <nav class="Navigation">
+            <a href="./index.html"><p class="Logo"><i class="fa-solid fa-face-smile"></i> Home</p></a>
+          <ul class="List">
+            <li><i class="fa-solid fa-inbox"></i> <span> Register</span></li>
+            <li> <i class="fa-solid fa-book"></i>  <span>About us</span></li>
+            <li> <i class="fa-solid fa-bookmark"></i> <span>Loans</span></li>
+            <li> <i class="fa-solid fa-comments" ></i> <span>Block</span> </li>
+          </ul>
+  
+          <button class="Burgermenu">
+            <i class="fa-solid fa-list"></i>
+            <span>Menu</span>
+          </button>
+          <div class="circle-container">
+              <div class="circle">
+                  <div class="mini--circle one">
+                      <div class="big--arm"></div>
+                  </div>
+                  <div class="mini--circle two">
+                      <div class="small--arm"></div>
+                  </div>
+              </div>
+          </div>
+        </nav>
+      </header>
+      <main class="main2">
+        <button class="register-button" popovertarget="my-popover">Register</button>
+
+        <section class="Modal" id="my-popover" popover> 
+          
+            <form>
+                <ul>
+                    <li> 
+                      
+                      <label> 
+                        <span> Name</span> 
+                        <input placeholder="Name" required type="text" name="name">
+                      </label>
+                      
+                      </li>
+                  
+                        <li>
+                            <label>
+                                
+                                <span> Surname</span>
+                                <input  placeholder="Surname" required type="text" name="Surname">
+    
+                              </label>
+                          </li>
+                          
+                          <li>
+                              <label>
+                                  <span> Phone</span>
+                                  <input placeholder="Phone number" type="tel" name="phone">
+                              </label>
+                          </li>
+    
+    
+                          <li>
+                              <label>
+                                  <span> Password </span>
+                                  <input placeholder="Password" required type="password" name="password">
+                              </label>
+                          </li>
+                        <li>
+                            <textarea class="textarea" rows="4" cols="20" placeholder="Why did you choose us">
+                            </textarea>
+                        </li>
+                      </ul>
+                      <input type="submit" value="Register">
+                  </form>
+                  
+              </section>
+              <div class="frames">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d10407.851794142402!2d17.390038!3d49.296045!3m2!1i1024!2i768!4f13.1!5e0!3m2!1scs!2scz!4v1722771671779!5m2!1scs!2scz" width="100%" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/XH5FIaSnMxM?si=0ApbGFuebuayaomm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+      </main>
+      
+</body>
+</html>
